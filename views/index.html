@@ -10,9 +10,13 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"/> -->
   </head>
   <body>
+    <!-- todo figure out a way to make font awesome work -->
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -23,47 +27,122 @@
     <!-- header img -->
     <!-- <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"> -->
     <!--HTML header tag starts here-->
-    <header>
-      <div class="navigation">
-        <div id="logo-div">
-          <img
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <!-- Make these smooth scroll to anchor links -->
-        <div class="nav-item">Features</div>
-        <div class="nav-item">How It Works</div>
-        <div class="nav-item">Pricing</div>
+    <header id="header">
+      <div id="header-img">
+        <img
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt=""
+        srcset=""
+        />
+      </div>
+      <!-- Make these smooth scroll to anchor links -->
+      <div id="nav-bar">
+        <ul>
+          <li><a href="" class="nav-link">Features</a></li>
+          <li><a href="" class="nav-link">How It Works</a></li>
+          <li><a href="" class="nav-link">Pricing</a></li>
+        </ul>
       </div>
     </header>
     <div class="container">
-        <div id="title">
-            <h1>Handcrafted, home-made masterpieces</h1>
-            <form action="" id="email-form">
-                <label for="email"></label>
-                <input type="email" name="email" id="email-input" placeholder="Enter your email address">
-            </form>
+      <div id="hero">
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <form action="" id="form">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            placeholder="Enter your email address"
+          /></br>
+          <button id="hero-cta">
+            Get Started
+          </button>
+        </form>
+      </div>
+
+      <section id="features">
+       <div class="grid-container">
+          <div class="icon-div"><i class="fas fa-fire"></i></div>
+          <div class="feature">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+          <div class="icon-div"><i class="fas fa-truck"></i></div>
+          <div class="feature">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+          <div class="icon-div"><i class="fas fa-battery-full"></i></div>
+          <div class="feature">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
         </div>
-        <section id="features">
-            <div class="grid">
-                <div class="icon-div">icon goes here</div>
-                <div class="feature">feature desc goes here</div>
+      </div>
+      </section>
+      <section id="how-it-works">
+          <div id="youtube-div">
+            <!-- embed youtube video here -->
+          <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="">
+          </iframe>
+          </div>
+      </section>
+      <!-- completely remove this section a build it again in mobile -->
+      <section id="pricing">
+        <div class="product">
+          <div class="product-name">
+             Tenor Trombone
             </div>
-            <div class="grid">    
-                <div class="icon-div">icon go here</div>
-                <div class="feature">icon go here</div>
+           <div class="product-desc">
+             <h3><strong>$600</strong></h3>
+              <p>Lorem, ipsum dolor.</br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+            </p>
+          </div>
+          <button class="cta">Select</button>
+        </div>
+        <div class="product">
+          <div class="product-name">Bass Trombone</div>
+            <div class="product-desc">
+              <h3><strong>$900</strong></h3>
+              <p>Lorem, ipsum dolor.</br>
+                Lorem, ipsum dolor.<br>
+                Lorem, ipsum dolor.<br>
+              </p>
             </div>
-            <div class="grid">
-                <div class="icon-div">icon go here</div>
-                <div class="feature">icon go here</div>
-            </div>
-        </section>
-
-
-
+            <button class="cta">Select</button>
+          </div>
+        <div class="product">
+          <div class="product-name">Valve Trombone</div>
+           <div class="product-desc">
+             <h3><strong>$1200</strong></h3>
+            <p>Lorem, ipsum dolor.</br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+            </p></div>
+            <button class="cta">Select</button>
+          </div>
+      </section>
+      <footer>
+        <div id="footer-wrapper">
+        <div class="footer-item">Privacy</div>
+        <div class="footer-item">Terms</div>
+        <div class="footer-item">Contact</div>
+      </div>
+      <div id="copy-right">Copyright 2016, Original Trombones</div>
+      </footer>
     </div>
     <script src="" async defer></script>
+
   </body>
 </html>
