@@ -1,5 +1,6 @@
 html{
 font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+scroll-behavior: smooth;
 }
 
 
@@ -36,6 +37,7 @@ body {
 
 #header-img {
   width:50vw;
+  max-width: 500px;
 }
 
 #header-img > img {
@@ -63,13 +65,13 @@ max-width: 300px;
 #form {
   width:20vw;
 }
-#form > input {
+#form > #email {
   width: 100%;
   border: 1px solid black;
   padding: .5rem 0 .5rem .5rem;
 }
 
-#hero-cta {
+#submit {
   margin: 10px;
   border: none;
   background-color:gold;

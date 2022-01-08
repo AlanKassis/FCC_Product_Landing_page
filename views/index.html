@@ -28,36 +28,36 @@
     <!-- <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"> -->
     <!--HTML header tag starts here-->
     <header id="header">
-      <div id="header-img">
+      <div >
         <img
         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
         alt=""
         srcset=""
+        id="header-img"
         />
       </div>
       <!-- Make these smooth scroll to anchor links -->
-      <div id="nav-bar">
+      <nav id="nav-bar">
         <ul>
-          <li><a href="" class="nav-link">Features</a></li>
-          <li><a href="" class="nav-link">How It Works</a></li>
-          <li><a href="" class="nav-link">Pricing</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
     <div class="container">
       <div id="hero">
         <h1>Handcrafted, home-made masterpieces</h1>
-        <form action="" id="form">
+        <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
           <label for="email"></label>
           <input
             type="email"
             name="email"
-            id="email-input"
+            id="email"
             placeholder="Enter your email address"
           /></br>
-          <button id="hero-cta">
-            Get Started
-          </button>
+          <input type="submit" value="Get Started" id="submit">
+        </input>
         </form>
       </div>
 
@@ -142,7 +142,7 @@
       <div id="copy-right">Copyright 2016, Original Trombones</div>
       </footer>
     </div>
-    <script src="" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
 
   </body>
 </html>
