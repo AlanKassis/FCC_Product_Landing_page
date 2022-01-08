@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var port = 5000;
 // const nm_dependencies = ['@fortawesome'];
 // var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
@@ -18,14 +19,14 @@ app.get("/", (req, res) => {
 })
 
 const server = app.listen(process.env.PORT || 5000, () => {
-  const port = server.address().port;
+   port = server.address().port;
   console.log(`Express is working on port ${port}`);
 });
 
 // let port = process.env.PORT;
-// if (port == null || port =="") {
-//   port = 8000;
-// }
+ if (port == null || port =="") {
+   port = 8000;
+}
 
 app.listen(port);
 console.log(`Listening on port ${port}`)
